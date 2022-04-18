@@ -1,0 +1,559 @@
+@charset "UTF-8";
+
+/*Configurações para toda página*/
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* força o elemento a obeder o tamanho do container em que foi criado*/
+        font-family: Comic Sans MS;
+}
+
+/*Configuração de todas páginas exceto página inicial e destaques*/
+
+header#cabecalho {
+        display: flex;
+        justify-content: space-between; /* alinhando os elementos na horizontal*/
+        height: 115px;
+        width: 100%;
+        border-bottom: 3px solid green;
+        background-color: #1e83c7;
+        position: fixed;
+}
+/*--------------------------------*/
+
+/*Configurações do Cabeçalho*/
+
+header#cabecalho1 {
+        display: flex;
+        justify-content: space-between; /* alinhando os elementos na horizontal*/
+        height: 115px;
+        width: 100%;
+        border-bottom: 3px solid green;
+        background-color: #1e83c7;
+       
+      
+}
+
+
+#logo {
+        margin-left: 50px;
+        display: flex;
+        width: 150px;
+        height: 159px;
+        position: absolute;
+}
+
+
+h2#subtitulo {
+        position: absolute;
+        left: 990px;
+        top: 90px;
+        font-size: 19px;
+        color: #f8fc0f;
+        font-family: Comic Sans MS;       
+
+}
+
+#menu {
+        display: flex;
+        align-items: center;
+        margin-right: 110px;
+        
+}
+
+
+#menu li {
+         display: inline-block;
+         margin-left: 4px;
+         font-size: 17px;
+         font-family: Comic Sans MS;
+        
+         
+}
+
+#menu a {
+        cursor: pointer;
+        text-decoration: none;
+        color: aliceblue;
+        transition: all 1s;
+}
+
+#menu a:hover {
+        color: #f8fc0f;
+        font-size: 22px;
+}
+
+
+/*Formatação do Corpo da Página*/
+
+
+#banner img {
+        width: 100%;
+  }
+
+main {
+        text-align: center;
+        font-family: Comic Sans MS;
+}
+
+#introducao {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top:580px;
+        padding-bottom: 30px;
+}
+
+#introducao h1 {
+        color: #1e83c7;
+}
+
+#introducao h2 {
+       color: #1e83c7;
+       margin: 20px;
+       
+}
+
+
+.espacamento {
+        margin: 25px;
+}/*Espaço entre os conteúdos da página*/
+
+
+
+#introducao h3 {
+        text-align: left;
+        font-family: Comic Sans MS;
+}
+
+#introducao h3 a {
+        color: #4fa64f;
+        cursor: pointer;
+        text-decoration: none;
+
+}
+
+/*Formatação dos botões*/
+
+.botoes {
+        margin-top: 16px;
+        margin-bottom: 80px;
+        background-color: #4fa64f;
+        font-size: 16px;
+        border-radius: 25px;
+        font-family: Comic Sans MS;
+}
+
+.botoes a {
+        color: #111111;
+        cursor: pointer;
+        text-decoration: none;
+}
+
+.botoes a:hover {
+        color: #1e83c7;
+}
+
+/*Formatação do rodapé*/
+
+#rodape {
+    border-top: 3px solid #4fa64f;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center; /* alinhar o texto ao centro*/
+}
+
+.cor-rodape {
+    color: #4fa64f;
+}
+
+.cor-rodape a {
+    text-decoration: none;
+    color: #1e83c7;
+    cursor: pointer;
+}
+
+.cor-rodape a:hover {
+    color: #4fa64f;
+}
+
+.cor-rodape #config-telegram {
+    text-decoration: none;
+    color: #4fa64f;
+    cursor: pointer;
+}
+
+.cor-rodape #config-telegram:hover {
+    color: #1e83c7;
+}
+
+#rodape p {
+     margin-bottom: -3px;
+}
+
+#rodape span {
+     color: #1e83c7;
+}
+
+#rodape span+span {
+      color: #1e83c7;
+}
+/*----------------------------------*/
+
+
+/*Formatação da Página Destaques*/
+
+header#cabecalho-destaques {
+        display: flex;
+        justify-content: space-between; /* alinhando os elementos na horizontal*/
+        height: 115px;
+        width: 100%;
+        border-bottom: 3px solid green;
+        background-color: #1e83c7;
+}
+
+/*Divisão da tela*/
+#meuteste {
+        position: relative;
+        padding-bottom: 80px;
+        text-align: left;
+}
+section {
+   margin-top: 10px;
+   padding: 10px;
+   display: block;
+   float: left;
+   width: 60%;
+}
+
+aside {
+   margin-top: 63px;
+   display: block;
+   padding: 10px;
+   float: left;
+   width: 40%;
+}
+
+/*Formatação do conteúdo destaques*/
+#autordestaques {
+       text-align: right;
+       margin-top: 10px;
+       margin-bottom: 20px;
+       color: #4fa64f;
+      
+}
+
+hgroup h1 {
+        text-align: left;
+        background-color: #1e83c7;
+        padding-left: 5px;
+}
+
+hgroup h2 {
+        color: #1e83c7;
+        margin-top: 10px;
+        margin-bottom: 5px;
+}
+
+hgroup p {
+       text-align: justify;
+}
+
+/*Formatação dos botões*/
+.botoesdestaques a {
+       text-decoration: none;
+       color: #111111;
+       cursor: pointer;
+}
+
+.botoesdestaques a:hover {
+       color: #1e83c7;
+}
+
+.botoesdestaques {
+       margin-top: 5px;
+       padding-left: 5px;
+       padding-right: 5px;
+       background-color: #4fa64f;
+       margin-right: 90%;
+       border-radius: 25px;
+       font-size: 12px;
+}
+
+/*Formatação da parte lateral*/
+
+aside hgroup h1 {
+       background-color: #4fa64f;
+       text-align: center;
+       font-size: 24.5px;
+       
+}
+
+aside hgroup h2 {
+       color: #4fa64f;
+       font-weight:900px;
+       font-family:Comic Sans MS;
+}
+
+aside hgroup p {
+       border-bottom:2px solid #ddd;
+       text-align: justify;
+       margin-top: 10px;
+}
+
+/*Rodapé da página destaques*/
+#destaques {
+        border-top: 3px solid #4fa64f;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 800px;
+        text-align: center; /* alinhar o texto ao centro*/
+}
+
+#destaques p {
+        margin-bottom: -3px;
+}
+   
+#destaques span {
+        color: #1e83c7;
+}
+   
+#destaques span+span {
+         color: #1e83c7;
+}
+/*-------------------------------*/
+
+/*Formatação da Página Disciplinas*/
+
+#area-principal {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 160px;
+        padding-bottom: 30px;
+        text-align: center;
+
+}
+
+#area-principal hgroup {
+        margin-top: 20px;
+}
+
+.botoes-disciplinas {
+        margin-top: 10px;
+        text-align: center;
+        border-radius: 25px;
+}
+
+#area-principal a {
+        text-decoration: none;
+        color: #48d848;
+}
+
+/*--------------------------------*/
+
+/*Formatação Geral das Disciplinas*/
+
+#area-principal-disciplinas {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 160px;
+        padding-bottom: 30px;
+        text-align: left;
+}
+
+.disciplina_imagem {
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 15px;
+}
+
+#area-principal-disciplinas hgroup {
+        margin-top: 30px;
+}
+
+#area-principal-disciplinas ul {
+        margin-left: 30px;
+}
+
+#area-principal-disciplinas p {
+        margin-top: 15px;
+        margin-bottom: 10px;
+}
+
+#area-principal-disciplinas h1 {
+        color: #111111;
+}
+
+#area-principal-disciplinas h2 {
+        margin-top: 20px;
+}
+
+#area-principal-disciplinas h3 {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        color: #1e83c7;
+
+}
+
+.botoes-lermateria {
+        margin-top: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-right: 93.8%;
+        font-size: 12px;
+        border-radius: 25px;
+        background-color: #4fa64f;
+        
+}
+
+.botoes-lermateria a {
+        color: #111111;
+        text-decoration: none;
+        cursor: pointer;
+        
+}
+
+
+/*---------------------------------*/
+
+/*Formatação da Página de Contato*/
+#contato {
+        text-align: center;
+}
+
+#contato hgroup {
+        padding-top: 150px;
+}
+
+#contato h1{
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        color: #48d848;
+}
+#contato ul {
+        margin-bottom: 25px;
+}
+/*------------------------------*/
+
+/*Materias*/
+
+.corpo-materias {
+       padding-top: 180px;
+       text-align: left;
+       padding-left: 10px;
+       padding-bottom: 30px;
+}
+
+.corpo-materias h1 {
+        color: #1e83c7;
+ }
+
+.corpo-materias h2 {
+       margin-top: 20px;
+       color: #1e83c7;
+}
+
+.corpo-materias h3 {
+        margin-top: 20px;
+        color: #1e83c7;
+ }
+
+.corpo-materias p {
+       margin-top: 15px;
+}
+
+.corpo-materias ul {
+       padding-left: 25px;
+       margin-top: 10px;
+}
+
+.corpo-materias li {
+       margin-top: 7px;
+}
+
+.imagens {
+       margin-top: 30px;
+       margin-left: 135px;
+       margin-right: 60px;
+       cursor: pointer;
+       text-align: center;
+}
+
+
+
+/*Descrição da imagem*/
+.descricao p {
+        text-align: center;
+        margin-top: 1px;
+        margin-bottom: 30px;
+        opacity: 70%;
+ }
+ /*---------------------------------*/
+
+ /*Formatação do Slider-Banner*/
+
+.slider {
+        display: block;
+        height: auto;
+        width: 1200px;
+        margin-top: 70px;
+        position: absolute ;
+        margin-left: 35px;
+}
+
+.slider li {
+        list-style: none;
+        position: absolute;
+}
+
+.slider img {
+        margin: auto;
+        height: 100%;
+        width: 100%;
+        
+}
+
+.slider input {
+        display: none;
+}
+
+.slider label {
+        background-color: #1e83c7;
+        bottom: -30px;
+        cursor: pointer;
+        display: block;
+        height: 10px;
+        position: absolute;
+        width: 10px;
+        z-index: 10px;
+        border-radius: 20px;
+        margin-left: 88%;
+}
+
+.slider li:nth-child(1) label {
+        left: 10px;
+}
+
+.slider li:nth-child(2) label {
+        left: 40px;
+}
+
+.slider li:nth-child(3) label {
+        left: 70px;
+}
+
+.slider img {
+        opacity: 0;
+        visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+        opacity: 1;
+        visibility: visible;
+        z-index: 10px;
+}
+/*--------------------------------*/
